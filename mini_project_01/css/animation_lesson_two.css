@@ -1,0 +1,192 @@
+body {
+	background: white;
+}
+
+.cover {
+	height: 562px;
+	width: 367px;
+	background: #ff4500;
+	border: 22px #B22222 solid;
+	position: absolute;
+	top: 50%;
+	margin-top: -300px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.border {
+	height: 546px;
+	width: 352px;
+	border: 4px #B22222 solid;
+	margin-top: 4px;
+	margin-left: 3px;
+}
+
+.title {
+	width: 268px;
+	height: 349px;
+	background: url("../parts/Title.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 73px;
+	animation: fade 3s ease-in;
+}
+
+.birds {
+	width: 360px;
+	height: 600px;
+	background: url("../parts/Birds.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-top: -22px;
+}
+
+.yellowring {
+	width: 349px;
+	height: 349px;
+	background: url("../parts/YellowFull.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-left: 9px;
+	margin-top: 107px;
+	animation: rotate 20s infinite linear;
+}
+
+.redring {
+	width: 344px;
+	height: 344px;
+	background: url("../parts/RedCircle.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-left: 11px;
+	margin-top: 109px;
+	animation: rotate 10s infinite linear;
+}
+
+.dotring {
+	width: 307px;
+	height: 307px;
+	background: url("../parts/YellowDots.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-left: 29px;
+	margin-top: 127px;
+	animation: rotate 15s infinite linear;
+}
+
+.stars {
+	width: 354px;
+	height: 554px;
+	background: url("../parts/YellowStars.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-top: -22px;
+	margin-left: 6px;
+	animation: twinkle 4s infinite cubic-bezier(1,0,0,1);
+	animation-delay: 0.5s;
+}
+
+.starsdis {
+	width: 354px;
+	height: 554px;
+	background: url("../parts/YellowStarsDisappear.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-top: -22px;
+	margin-left: 6px;
+	animation: flicker 8s linear infinite;
+}
+
+.starsdis2 {
+	width: 354px;
+	height: 554px;
+	background: url("../parts/YellowDis.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-top: -22px;
+	margin-left: 6px;
+}
+
+.starsdis3 {
+	width: 354px;
+	height: 554px;
+	background: url("../parts/YellowDis2.gif") no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	margin-top: -22px;
+	margin-left: 6px;
+	animation: flash 5s infinite;
+	animation-delay: 0.3s;
+}
+
+.circle {
+	width: 272px;
+	height: 272px;
+	background: #f5c71a;
+	border-radius: 100%;
+	position: absolute;
+	margin-left: 47px;
+	margin-top: 149px;
+}
+
+.cover:hover .circle {
+	background: url("../parts/Desert4.jpg") no-repeat center;
+	transition: ease 3s;
+}
+
+.anniv {
+	width: 278px;
+	height: 278px;
+	background: url("../parts/25Anniversary.gif") no-repeat center;
+	background-size: 98%;
+	position: absolute;
+	margin-left: 45px;
+	margin-top: 137px;
+}
+
+.author {
+	width: 278px;
+	height: 278px;
+	background: url("../parts/author.gif") no-repeat center;
+	background-size: 86%;
+	position: absolute;
+	margin-left: 43px;
+	margin-top: 384px;
+	animation: fade 5s ease-in;
+}
+
+
+
+@keyframes rotate {
+	0%, 	{ transform: rotate(0deg); }
+	100% 	{ transform: rotate(360deg); }
+}
+
+@keyframes fade {
+	0%  { opacity: 0; }
+	100%  { opacity: 1; }
+}
+
+@keyframes twinkle {
+	0% {  opacity: 1; }
+	50% {  opacity: 0.5; }
+	60%	{  opacity: 1; }
+	75% {  opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes flicker {
+	0% {  opacity: 0; }
+	15% {  opacity: 0.5; }
+	30% {  opacity: 1; }
+	42%	{  opacity: 0.25; }
+	95% {  opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes flash {
+	0% {  opacity: 0; }
+	75% {  opacity: 1; }
+	100% { opacity: 0; }
+}
